@@ -1,9 +1,9 @@
 body{
   overflow:hidden;
   font-family: 'Open Sans', sans-serif;
+  color: #111;
   padding:0;
   margin: 0;
-  color: #111;
 }
 
 a{
@@ -16,11 +16,20 @@ h1{
   font-size: 6em;
   text-align: center;
   width: 100%;
+  margin: 30px 0;
+}
+
+h2{
+  font-family: 'Droid Serif', serif;
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
 }
 
 p{
-  padding:0 50px;
+  padding:0 30px;
   text-align: center;
+  font-size: 1.1em;
 }
 
 nav{
@@ -34,6 +43,19 @@ nav{
   justify-content: center;
 }
 
+div.im-container{
+  max-height:700px;
+  overflow: hidden;
+}
+
+div.im-overlay{
+  height:700px;
+  overflow: hidden;
+  width:100%;
+  background-color: #111;
+  opacity: 0.5;
+}
+
 img.monochrome{
   filter: grayscale(100%);
 }
@@ -41,7 +63,11 @@ img.monochrome{
 img.fit{
   width:100%;
   height:auto;
-  margin: 20px 0;
+  margin: 0;
+}
+
+.fcolor{
+  color:#fff;
 }
 
 #nav-bar{
@@ -65,4 +91,18 @@ img.fit{
 .content-container{
   height:100%;
   overflow-y: scroll;
+}
+
+.overlays{
+  position: absolute;
+}
+
+.sub{
+  min-height: 500px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.grey{
+  background-color: #eee;
 }
